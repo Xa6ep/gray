@@ -1,0 +1,27 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:yandex="http://news.yandex.ru" xmlns:media="http://search.yahoo.com/mrss/" xmlns:turbo="http://turbo.yandex.ru" version="2.0">
+	<channel>
+    <title>{{ site.name | xml_escape }}</title>
+    <link>{{ site.url }}</link>
+    <description>{{ site.description | xml_escape }}</description>
+		{% if site.google.analytics %}
+		<turbo:analytics type="Google" id="{{ site.google.analytics }}"></turbo:analytics>
+		{% endif %}
+		{% if site.yandex.metrika %}
+    <turbo:analytics type="Yandex" id="{{ site.yandex.metrika }}"></turbo:analytics>
+		{% endif %}
+		{% for post in site.posts %}
+      <item turbo="true">
+				<title>{{ post.title | xml_escape }}</title>
+        <link>{{ site.url }}{{ post.url }}</link>
+        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+        <turbo:content>
+          {{ post.content | xml_escape }}
+        </turbo:content>
+      </item>
+		{% endfor %}
+  </channel>
+</rss>
