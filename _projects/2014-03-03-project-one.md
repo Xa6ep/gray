@@ -1,9 +1,33 @@
----
+﻿---
 layout: project
-title: Project One
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-summary: Lorem ipsum dolor sit amet, consectetur.
-category: Front-end development
+title: Электромонтаж
+description: ★ ★ Вызвать электрика на дом в Ростове-на-Дону → на сайте ☎ 8(908)516-96-58
+category: Цены
 ---
+<table>
+<colgroup>
+<col width="90%" />
+<col width="10%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Услуга</th>
+<th>Цена</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td markdown="span">Установка розетки</td>
+<td markdown="span">200</td>
+</tr>
+<tr>
+<td markdown="span">Сверление подрозетника</td>
+<td markdown="span">100</td>
+</tr>
+</tbody>
+</table>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+| Услуга | Цена |
+|-------|--------|
+| Установка розетки | 200 |
+| Сверление подрозетника | 100 |
